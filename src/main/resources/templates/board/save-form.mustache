@@ -1,0 +1,22 @@
+{{> layout/header}} {{!    Partial 태그 (부분 템플릿 태그) }}
+
+<main class="container p-5 content">
+    <article>
+        <div class="card">
+            <div class="card-header"><b>글쓰기 화면입니다</b></div>
+            <div class="card-body">
+                <form action="/board/save" method="post">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Enter title" name="title">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" name="content"></textarea>
+                    </div>
+                    <button class="btn btn-primary form-control">글쓰기완료</button>
+                </form>
+            </div>
+        </div>
+    </article>
+</main>
+
+{{> layout/footer}}
